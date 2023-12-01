@@ -37,4 +37,5 @@ on p.id = ur.fk_pessoa limit 100;
 SELECT ur.id, ur.unidade, p.id AS pessoa_id, p.nome AS pessoa_nome
 FROM unidade_requisitante ur
 INNER JOIN pessoa p ON ur.fk_pessoa = p.id
+WHERE p.id in (14, 140, 1400);
 
